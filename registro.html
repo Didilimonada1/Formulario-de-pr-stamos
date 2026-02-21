@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Bitácora de Préstamos FIM</title>
+</head>
+<body>
+
+    <center>
+        <h2>BITACORA DE PRESTAMO DE EQUIPOS</h2>
+        <h3>FACULTAD DE INGENIERÍA MOCHIS</h3>
+        <h4>UNIVERSIDAD AUTÓNOMA DE SINALOA</h4>
+        <p>COORDINACIÓN DE CENTROS DE COMPUTO Y RED ESCOLAR</p>
+    </center>
+
+    <form action="administrar.html" method="get">
+        <table border="1" align="center" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>Nombre del Alumno/Prof</th>
+                    <th>Carrera / Grupo</th>
+                    <th>Equipo (C, GP, SIN, P)</th>
+                    <th>Hr. Préstamo / Fecha</th>
+                    <th>Hr. Entrega / Firma</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="nombre1" placeholder="Nombre completo"></td>
+                    <td>
+                        <input type="text" name="carrera1" placeholder="Carrera">
+                        <input type="text" name="grupo1" size="5" placeholder="Gpo">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="c1"> C
+                        <input type="checkbox" name="gp1"> GP
+                        <input type="checkbox" name="sin1"> SIN
+                    </td>
+                    <td>
+                        <input type="time" name="hr_p1">
+                        <input type="date" name="f1">
+                    </td>
+                    <td>
+                        <input type="time" name="hr_e1">
+                        <input type="text" name="firma1" placeholder="Firma digital">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nombre2"></td>
+                    <td>
+                        <input type="text" name="carrera2">
+                        <input type="text" name="grupo2" size="5">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="c2"> C
+                        <input type="checkbox" name="gp2"> GP
+                        <input type="checkbox" name="sin2"> SIN
+                    </td>
+                    <td>
+                        <input type="time" name="hr_p2">
+                        <input type="date" name="f2">
+                    </td>
+                    <td>
+                        <input type="time" name="hr_e2">
+                        <input type="text" name="firma2">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <center>
+            <input type="submit" value="Guardar Registros">
+            <input type="reset" value="Limpiar Formulario">
+        </center>
+    </form>
+
+    <p align="center">
+        <a href="administrar.html">Ir a la Vista de Administración (Consultas)</a>
+    </p>
+
+</body>
+</html>
